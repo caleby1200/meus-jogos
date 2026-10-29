@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+    <title>Meus Jogos</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+    <h1>Meu primeiro jogo!</h1>
+    <p>Pontos: <span id="pontos">0</span></p>
+
+    <button onclick="ganharPontos()">
+        Clique para ganhar pontos!
+    </button>
+
+    <script>
+        let pontos = 0;
+
+        function ganharPontos() {
+            pontos++;
+            document.getElementById("pontos").innerText = pontos;
+        }
+    </script>
+</body>
+</html>
